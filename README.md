@@ -1,1 +1,1 @@
-Set of web development projects that I have worked on and uploaded them recently
+These are the projects I've worked on since the time I've begun learning Web Development. Starting off with HTML until using all three languages to make meaningful projects. I have written detailed description of all the projects I've worked on so far, compiled them altogether and uploaded them to give a better clarity and understanding of each project that I have worked on. Please do consider reading each project's description that makes it easier to understand the code.
