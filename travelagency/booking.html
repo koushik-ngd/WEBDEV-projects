@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Booking - SkyHigh Travel</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type = "image/png" href="images/favicon.png">
+  <script src ="booking.js"></script>
+  <!-- <script>
+    function showPrice() {
+      let package = document.getElementById("package").value;
+      let price = "";
+
+      if (package === "bali") price = "$799";
+      else if (package === "paris") price = "$999";
+      else if (package === "swiss") price = "$1199";
+      else price = "Please select a package";
+
+      document.getElementById("price").innerText = "Price: " + price;
+    }
+
+    function confirmBooking() {
+      let name = document.getElementById("fname").value;
+      alert("Thank you, " + name + "! Your booking is confirmed.");
+    }
+  </script> -->
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Book Your Holiday</h1>
+  </header>
+<!--The navigation tag-->
+  <nav>
+    <ul>
+      <li><a href="index.html" target="_blank">Home</a></li>
+      <li><a href="packages.html" target="_blank">Holiday Packages</a></li>
+      <li><a href="booking.html" target="_blank">Booking</a></li>
+    </ul>
+  </nav>
+
+  <!-- Here's the Booking Form  where you can submit your details and confirm your booking based on the package you choose-->
+  <main>
+    <h1>BOOKING FORM</h1>
+    <form onsubmit="confirmBooking(); return false;">
+      <label>First Name:</label><br>
+      <input type="text" id="fname" required><br><br>
+
+      <label>Last Name:</label><br>
+      <input type="text" required><br><br>
+
+      <label>Credit Card:</label><br>
+      <input type="text" required><br><br>
+
+      <label>CVV:</label><br>
+      <input type="text" required><br><br>
+
+      <label>Expiry Month (MM):</label><br>
+      <input type="text" required><br><br>
+
+      <label>Expiry Year (YY):</label><br>
+      <input type="text" required><br><br>
+
+      <label>Select Package:</label><br>
+      <select id="package" onchange="showPrice()" required>
+        <option value="">--Select--</option>
+        <option value="bali">Bali Bliss</option>
+        <option value="paris">Paris Getaway</option>
+        <option value="swiss">Swiss Adventure</option>
+      </select><br><br>
+
+      <p id="price">Price: </p>
+
+      <button type="submit">Confirm</button>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Sky Reach Travel Agency</p>
+  </footer>
+
+</body>
+</html>
